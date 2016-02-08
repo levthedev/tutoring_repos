@@ -1,28 +1,9 @@
-== README
+to get this running locally, you'll need ruby, rails, bundler, git, and postgresql (get Postgres.app if you're on OSX)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+`git clone git@github.com:levthedev/tutoring_repos.git` OR `git clone https://github.com/levthedev/tutoring_repos.git` if you don't have SSH set up for Git (which you should)
 
-Things you may want to cover:
+cd into the project, and run `bundle`
 
-* Ruby version
+finally, run `rake db:create db:migrate` to create and migrate your postgresql database, and then `rails server` to spin up a a server on localhost:3000.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+remember to stick a byebug anywhere for debugging (or use rails console)!
